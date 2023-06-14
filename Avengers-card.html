@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Cards   </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="Strange()">Dr. Strange</button>
+    <button onclick="Ironman()">Iron Man</button>
+    <button onclick="Spider()">Spider Man</button>
+    <button onclick="America()">Captain America</button>
+    <button onclick="Marval()">Captain Marval</button>
+    <button onclick="bruce()">Hulk</button>
+    <div class="card-body">
+        <div class="card">
+                <img id="img1" src="Images/dr. strange.png" alt="">
+                <img id="img2" src="Images/dr. strange 2.png" alt="">
+                <div class="content">
+                    <h2 id="h2">Dr. Strange</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quasi aliquid voluptatibus recusandae dolorum hic, nisi ducimus voluptatem quis cupiditate libero accusantium iusto tempore voluptatum eum quia ipsa, eius impedit rem neque asperiores officiis sapiente?
+                    </p>
+                </div>
+        </div>
+    </div>
+    <script>
+        function Strange(){
+            document.getElementById('img1').src = 'images/dr. strange.png';
+            document.getElementById('img2').src = 'images/dr. strange 2.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, #411616, #2b374b)";
+            document.querySelector('#h2').innerHTML = 'Dr. Strange';
+        };
+        function Ironman(){
+            document.getElementById('img1').src = 'images/ironman.png';
+            document.getElementById('img2').src = 'images/ironman2.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, #a87b23, #640109)";
+            document.querySelector('#h2').innerHTML = 'Iron Man';
+        };
+        function Spider(){
+            document.getElementById('img1').src = 'images/Spider.png';
+            document.getElementById('img2').src = 'images/Spider 2.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, rgb(203 28 47), rgb(33 46 55))";
+            document.querySelector('#h2').innerHTML = 'Spider Man';
+        };
+        function America(){
+            document.getElementById('img1').src = 'images/Captain America.png';
+            document.getElementById('img2').src = 'images/Captain America 2.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, rgb(24 32 51), rgb(127 19 22))";
+            document.querySelector('#h2').innerHTML = 'Captain America';
+        };
+        function bruce(){
+            document.getElementById('img1').src = 'images/bruce.png';
+            document.getElementById('img2').src = 'images/hulk.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, rgb(52 56 37), rgb(26 26 29))";
+            document.querySelector('#h2').innerHTML = 'Hulk';
+        };
+        function Marval(){
+            document.getElementById('img1').src = 'images/Captain Marvel.png';
+            document.getElementById('img2').src = 'images/Captain Marvel 2.png';
+            document.querySelector('.card').style.background = "linear-gradient(135deg, rgb(30 99 142), rgb(177 32 42))";
+            document.querySelector('#h2').innerHTML = 'Captain <br> Marvel';
+        };
+    </script>
+</body>
+
+</html>

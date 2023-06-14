@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.card-body{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 826px;
+}
+.card{
+    width: 630px;
+    height: 350px;
+    position: relative;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, #411616, #2b374b);
+    border-radius: 25px;
+    transition: 1s;
+}
+#img1{
+    position: absolute;
+    width: auto;
+    height: 500px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+#img2{
+    position: absolute;
+    width: auto;
+    height: 500px;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+.card:hover #img1{
+    opacity: 0;
+    height: 600px;
+    left: 80%;
+    transition: 1s;
+}
+.card:hover #img2{
+    opacity: 100%;
+    height: 600px;
+    left: 80%;
+    transition: 1s;
+}
+.content{
+    color: #fff;
+    width: 400px;
+    opacity: 0;
+    transition: 1s;
+}
+.content h2{
+    font-size: 3em;
+}
+.card:hover .content{
+     opacity: 100%;
+}
+button{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+button:nth-child(1):hover{
+    background: linear-gradient(135deg, #411616, #2b374b);
+    color: #fff;
+}
+button:nth-child(2):hover{
+    background:linear-gradient(135deg, #a87b23, #640109);
+    color: #fff;
+}
+button:nth-child(3):hover{
+    background: linear-gradient(135deg, rgb(203 28 47), rgb(33 46 55));
+    color: #fff;
+}
+button:nth-child(4):hover{
+    background: linear-gradient(135deg, rgb(24 32 51), rgb(127 19 22));
+    color: #fff;
+}
+button:nth-child(5):hover{
+    background: linear-gradient(135deg, rgb(30 99 142), rgb(177 32 42));
+    color: #fff;
+}
+button:nth-child(6):hover{
+    background:linear-gradient(135deg, rgb(52 56 37), rgb(26 26 29));
+    color: #fff;
+}
+@media (max-width: 681px){
+    .card {
+        position: relative;
+        max-width: 600px;
+        display: block;
+    }
+    .card:hover{
+        height: 620px;
+    }
+    .card:hover #img1 {
+        opacity: 0;
+        height: 400px;
+        left: 50%;
+        transition: 1s;
+    }
+    .card:hover #img2 {
+        opacity: 100%;
+        height: 400px;
+        left: 50%;
+        transition: 1s;
+    }
+    .card:hover .content{
+        top: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 431px){
+      .card:hover{
+          height: 660px;
+      }
+}
+@media (max-width: 352px){
+    .card:hover{
+        height: 800px;
+    }
+    button:nth-child(6){
+        margin-bottom: 60px;
+    }
+}
